@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Personal Finance Manager</h1>
+
+        <div class="form-container">
+            <h2>Add Expense</h2>
+            <form id="expense-form">
+                <input type="text" id="expense-name" placeholder="Expense Name" required>
+                <input type="number" id="expense-amount" placeholder="Amount" required>
+                <button type="submit">Add Expense</button>
+            </form>
+        </div>
+
+        <div class="form-container">
+            <h2>Create Budget</h2>
+            <form id="budget-form">
+                <input type="number" id="budget-amount" placeholder="Monthly Budget Amount" required>
+                <button type="submit">Set Budget</button>
+            </form>
+        </div>
+
+        <div class="summary">
+            <h2>Summary</h2>
+            <p>Budget: $<span id="budget-value">0</span></p>
+            <p>Expenses: $<span id="expenses-value">0</span></p>
+            <p>Remaining: $<span id="remaining-value">0</span></p>
+        </div>
+
+        <div class="expenses-list">
+            <h2>Expenses</h2>
+            <ul id="expenses-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
